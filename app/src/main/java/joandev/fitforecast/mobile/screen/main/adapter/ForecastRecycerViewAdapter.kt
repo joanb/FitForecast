@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import joandev.fitforecast.R
-import joandev.fitforecast.mobile.screen.common.load
+import joandev.fitforecast.mobile.common.load
 import joandev.fitforecast.mobile.screen.main.model.ForecastViewEntity
 import kotlinx.android.synthetic.main.item_forecast.view.*
 

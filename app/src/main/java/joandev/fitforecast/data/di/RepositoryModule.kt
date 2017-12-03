@@ -2,8 +2,8 @@ package joandev.fitforecast.data.di
 
 import dagger.Module
 import dagger.Provides
-import joandev.fitforecast.data.ForecastDataRepository
-import joandev.fitforecast.data.datasources.ForecastDataSource
+import joandev.fitforecast.data.forecast.ForecastDataRepository
+import joandev.fitforecast.data.forecast.datasources.ForecastDataSource
 import joandev.fitforecast.domain.repositories.ForecastRepository
 import javax.inject.Named
 

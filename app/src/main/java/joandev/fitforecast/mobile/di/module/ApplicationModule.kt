@@ -3,7 +3,7 @@ package joandev.fitforecast.mobile.di.module
 import android.content.Context
 import dagger.Module
 import dagger.Provides
-import joandev.fitforecast.mobile.di.FitForecastApplication
+import joandev.fitforecast.mobile.FitForecastApplication
 import javax.inject.Singleton
 
 

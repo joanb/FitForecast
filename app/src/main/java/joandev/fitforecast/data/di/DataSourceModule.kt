@@ -2,8 +2,8 @@ package joandev.fitforecast.data.di
 
 import dagger.Module
 import dagger.Provides
-import joandev.fitforecast.data.datasources.ForecastDataSource
-import joandev.fitforecast.data.datasources.remote.ForecastRemoteDataSource
+import joandev.fitforecast.data.forecast.datasources.ForecastDataSource
+import joandev.fitforecast.data.forecast.datasources.remote.ForecastRemoteDataSource
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

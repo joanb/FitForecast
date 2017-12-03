@@ -1,6 +1,6 @@
 package joandev.fitforecast
 
-import joandev.fitforecast.data.model.*
+import joandev.fitforecast.data.forecast.model.*
 import joandev.fitforecast.domain.forecast.model.Forecast
 import joandev.fitforecast.mobile.screen.main.model.mapToUi
 import org.junit.Test

@@ -3,7 +3,7 @@ package joandev.fitforecast.mobile.di.component
 import dagger.Component
 import joandev.fitforecast.data.di.DataSourceModule
 import joandev.fitforecast.data.di.RepositoryModule
-import joandev.fitforecast.mobile.di.FitForecastApplication
+import joandev.fitforecast.mobile.FitForecastApplication
 import joandev.fitforecast.mobile.di.module.ActivityModule
 import joandev.fitforecast.mobile.di.module.ApplicationModule
 import joandev.fitforecast.mobile.di.module.ViewModule

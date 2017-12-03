@@ -1,4 +1,4 @@
-package joandev.fitforecast.mobile.di
+package joandev.fitforecast.mobile
 
 import android.app.Application
 import android.content.Context

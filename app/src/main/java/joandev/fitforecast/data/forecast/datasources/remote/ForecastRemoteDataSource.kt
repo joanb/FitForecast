@@ -1,9 +1,9 @@
-package joandev.fitforecast.data.datasources.remote
+package joandev.fitforecast.data.forecast.datasources.remote
 
 import io.reactivex.Single
-import joandev.fitforecast.data.datasources.ForecastDataSource
-import joandev.fitforecast.data.model.ForecastRemoteEntity
-import joandev.fitforecast.data.model.mapToDomain
+import joandev.fitforecast.data.forecast.datasources.ForecastDataSource
+import joandev.fitforecast.data.forecast.model.ForecastRemoteEntity
+import joandev.fitforecast.data.forecast.model.mapToDomain
 import joandev.fitforecast.domain.forecast.model.Forecast
 import retrofit2.Retrofit
 import retrofit2.http.GET

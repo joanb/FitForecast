@@ -1,4 +1,4 @@
-package joandev.fitforecast.mobile.screen.common
+package joandev.fitforecast.mobile.common
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide

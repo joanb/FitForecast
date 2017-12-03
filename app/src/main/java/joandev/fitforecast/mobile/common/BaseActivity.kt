@@ -2,7 +2,7 @@ package joandev.fitforecast.mobile.common
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import joandev.fitforecast.mobile.di.FitForecastApplication
+import joandev.fitforecast.mobile.FitForecastApplication
 import joandev.fitforecast.mobile.di.component.ActivityComponent
 import joandev.fitforecast.mobile.di.module.ActivityModule
 import joandev.fitforecast.mobile.di.module.ViewModule

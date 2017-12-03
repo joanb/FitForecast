@@ -1,4 +1,4 @@
-package joandev.fitforecast.data.model
+package joandev.fitforecast.data.forecast.model
 
 import com.google.gson.annotations.SerializedName
 import joandev.fitforecast.domain.forecast.model.Forecast
