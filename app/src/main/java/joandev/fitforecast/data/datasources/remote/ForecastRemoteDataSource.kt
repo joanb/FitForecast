@@ -4,7 +4,7 @@ import io.reactivex.Single
 import joandev.fitforecast.data.datasources.ForecastDataSource
 import joandev.fitforecast.data.model.ForecastRemoteEntity
 import joandev.fitforecast.data.model.mapToDomain
-import joandev.fitforecast.domain.model.Forecast
+import joandev.fitforecast.domain.forecast.model.Forecast
 import retrofit2.Retrofit
 import retrofit2.http.GET
 import java.io.IOException
@@ -23,6 +23,6 @@ class ForecastRemoteDataSource @Inject constructor(private val retrofit: Retrofi
 
 interface ForecastApi {
 
-  @GET("data/2.5/forecast?id=524901&APPID=6cb7dfd0bcb844db53c39ae10911a5e9&units=metric")
+  @GET("data/2.5/forecast?id=3104324&APPID=6cb7dfd0bcb844db53c39ae10911a5e9&units=metric")
   fun getForecast(): Single<ForecastRemoteEntity>
 }

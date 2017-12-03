@@ -1,5 +1,6 @@
-package joandev.fitforecast.domain
+package joandev.fitforecast.domain.forecast.usecase
 
+import joandev.fitforecast.domain.repositories.ForecastRepository
 import javax.inject.Inject
 
 

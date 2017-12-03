@@ -4,7 +4,7 @@ import dagger.Module
 import dagger.Provides
 import joandev.fitforecast.data.ForecastDataRepository
 import joandev.fitforecast.data.datasources.ForecastDataSource
-import joandev.fitforecast.domain.ForecastRepository
+import joandev.fitforecast.domain.repositories.ForecastRepository
 import javax.inject.Named
 
 

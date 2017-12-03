@@ -1,4 +1,4 @@
-package joandev.fitforecast.mobile.screen.main
+package joandev.fitforecast.mobile.screen.main.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -35,10 +35,11 @@ class ForecastRecycerViewAdapter : RecyclerView.Adapter<ForecastRecycerViewAdapt
 
     fun bind(forecast: ForecastViewEntity) = with(rootView) {
       icon_iv.load("http://openweathermap.org/img/w/${forecast.icon}.png")
+      date_tv.text = forecast.date
       time_tv.text = forecast.time
-      rain_tv.text = "Rain: ${forecast.rainVolume ?: "No rain expected"}"
-      wind_tv.text = "Wind: ${forecast.windSpeed ?: "No data"}"
-      temp_tv.text = "Temperature: ${forecast.temp ?: "No data"}"
+      rain_tv.text = "${forecast.rainVolume ?: "0"} l/m2"
+      wind_tv.text = "${forecast.windSpeed ?: "No data"} km/h"
+      temp_tv.text = "${forecast.temp ?: "No data"} ºC"
     }
   }
 }

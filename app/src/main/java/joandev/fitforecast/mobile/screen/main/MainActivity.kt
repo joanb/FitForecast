@@ -5,6 +5,7 @@ import android.support.v7.widget.LinearLayoutManager
 import joandev.fitforecast.R
 import joandev.fitforecast.mobile.common.BaseActivity
 import joandev.fitforecast.mobile.di.component.ActivityComponent
+import joandev.fitforecast.mobile.screen.main.adapter.ForecastRecycerViewAdapter
 import joandev.fitforecast.mobile.screen.main.model.ForecastViewEntity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject

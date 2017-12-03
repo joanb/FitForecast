@@ -1,7 +1,7 @@
 package joandev.fitforecast.data.datasources
 
 import io.reactivex.Single
-import joandev.fitforecast.domain.model.Forecast
+import joandev.fitforecast.domain.forecast.model.Forecast
 
 
 /**

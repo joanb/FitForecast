@@ -2,7 +2,7 @@ package joandev.fitforecast.mobile.screen.main
 
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import joandev.fitforecast.domain.GetForecast
+import joandev.fitforecast.domain.forecast.usecase.GetForecast
 import joandev.fitforecast.mobile.screen.main.model.ForecastViewEntity
 import joandev.fitforecast.mobile.screen.main.model.mapToUi
 import javax.inject.Inject

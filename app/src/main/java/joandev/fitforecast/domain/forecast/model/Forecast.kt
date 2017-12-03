@@ -1,4 +1,4 @@
-package joandev.fitforecast.domain.model
+package joandev.fitforecast.domain.forecast.model
 
 
 /**

@@ -1,7 +1,7 @@
 package joandev.fitforecast.data.model
 
 import com.google.gson.annotations.SerializedName
-import joandev.fitforecast.domain.model.Forecast
+import joandev.fitforecast.domain.forecast.model.Forecast
 
 
 /**

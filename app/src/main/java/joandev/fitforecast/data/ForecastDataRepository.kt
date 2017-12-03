@@ -2,8 +2,8 @@ package joandev.fitforecast.data
 
 import io.reactivex.Single
 import joandev.fitforecast.data.datasources.ForecastDataSource
-import joandev.fitforecast.domain.ForecastRepository
-import joandev.fitforecast.domain.model.Forecast
+import joandev.fitforecast.domain.repositories.ForecastRepository
+import joandev.fitforecast.domain.forecast.model.Forecast
 import javax.inject.Inject
 
 
