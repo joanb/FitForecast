@@ -1,4 +1,4 @@
-# Nearby
+# Fit Forecast
 
 This android application shows basic forecast info of Zaragoza.
 
