@@ -8,7 +8,6 @@ class Forecast(
     val time: String,
     val icon: String?,
     val temp: Float?,
-    val humidity: Float?,
     val windSpeed: Float?,
     val rainVolume: Float?
 )

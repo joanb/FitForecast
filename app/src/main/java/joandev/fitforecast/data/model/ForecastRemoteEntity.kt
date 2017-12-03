@@ -26,8 +26,7 @@ class Weather(
 )
 
 class MainForecastInfo(
-    @SerializedName("temp") val temperature: Float?,
-    @SerializedName("humidity") val humidity: Float?
+    @SerializedName("temp") val temperature: Float?
 )
 
 class WindInfo(
@@ -46,7 +45,6 @@ fun ForecastRemoteEntity.mapToDomain() : List<Forecast> {
           it.time,
           it.weather?.first()?.icon,
           it.mainInfo.temperature,
-          it.mainInfo.humidity,
           it.wind.windSpeed,
           it.rain?.rainVolume
       ))

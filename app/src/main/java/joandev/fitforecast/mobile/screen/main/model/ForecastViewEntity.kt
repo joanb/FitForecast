@@ -11,7 +11,6 @@ class ForecastViewEntity(
     val time: String,
     val icon: String?,
     val temp: Float?,
-    val humidity: Float?,
     val windSpeed: Float?,
     val rainVolume: Float?
 )
@@ -19,15 +18,13 @@ class ForecastViewEntity(
 fun List<Forecast>.mapToUi() = map { it.mapToUi() }
 
 fun Forecast.mapToUi(): ForecastViewEntity {
-
   val splitDate = time.split(" ")
 
   return ForecastViewEntity(
       splitDate[0],
       splitDate[1],
-      icon,
+      "http://openweathermap.org/img/w/${icon}.png",
       temp,
-      humidity,
       windSpeed,
       rainVolume
   )

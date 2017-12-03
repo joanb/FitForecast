@@ -34,7 +34,7 @@ class ForecastRecycerViewAdapter : RecyclerView.Adapter<ForecastRecycerViewAdapt
   class ForecastViewHolder(private val rootView: View) : RecyclerView.ViewHolder(rootView) {
 
     fun bind(forecast: ForecastViewEntity) = with(rootView) {
-      icon_iv.load("http://openweathermap.org/img/w/${forecast.icon}.png")
+      icon_iv.load(forecast.icon)
       date_tv.text = forecast.date
       time_tv.text = forecast.time
       rain_tv.text = "${forecast.rainVolume ?: "0"} l/m2"
