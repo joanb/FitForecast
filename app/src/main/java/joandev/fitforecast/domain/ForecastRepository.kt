@@ -1,6 +1,7 @@
 package joandev.fitforecast.domain
 
 import io.reactivex.Single
+import joandev.fitforecast.domain.model.Forecast
 
 
 /**
@@ -8,5 +9,5 @@ import io.reactivex.Single
  */
 interface ForecastRepository {
 
-  fun getForecast(): Single<Forecast> //TODO: think a better name
+  fun getForecast(): Single<List<Forecast>>
 }
