@@ -8,6 +8,7 @@ import joandev.fitforecast.domain.model.Forecast
  */
 class ForecastViewEntity(
     val time: String,
+    val icon: String?,
     val temp: Float?,
     val humidity: Float?,
     val windSpeed: Float?,
@@ -18,6 +19,7 @@ fun List<Forecast>.mapToUi() = map { it.mapToUi() }
 
 fun Forecast.mapToUi() = ForecastViewEntity(
     time,
+    icon,
     temp,
     humidity,
     windSpeed,

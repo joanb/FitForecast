@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import joandev.fitforecast.R
+import joandev.fitforecast.mobile.screen.common.load
 import joandev.fitforecast.mobile.screen.main.model.ForecastViewEntity
 import kotlinx.android.synthetic.main.item_forecast.view.*
 
@@ -33,6 +34,8 @@ class ForecastRecycerViewAdapter : RecyclerView.Adapter<ForecastRecycerViewAdapt
   class ForecastViewHolder(private val rootView: View) : RecyclerView.ViewHolder(rootView) {
 
     fun bind(forecast: ForecastViewEntity) = with(rootView) {
+      icon_iv.load("http://openweathermap.org/img/w/${forecast.icon}.png")
+      time_tv.text = forecast.time
       rain_tv.text = "Rain: ${forecast.rainVolume ?: "No rain expected"}"
       wind_tv.text = "Wind: ${forecast.windSpeed ?: "No data"}"
       temp_tv.text = "Temperature: ${forecast.temp ?: "No data"}"

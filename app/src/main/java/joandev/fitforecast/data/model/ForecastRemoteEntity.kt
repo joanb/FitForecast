@@ -9,12 +9,20 @@ import joandev.fitforecast.domain.model.Forecast
  */
 class ForecastRemoteEntity(
     @SerializedName("list") val forecastList: List<ForecastDataEntity>
+
 )
 
 class ForecastDataEntity(
     @SerializedName("main") val mainInfo: MainForecastInfo,
     @SerializedName("wind") val wind: WindInfo,
-    @SerializedName("rain") val rain: RainInfo?
+    @SerializedName("rain") val rain: RainInfo?,
+    @SerializedName("weather") val weather: List<Weather>?,
+    @SerializedName("dt_txt") val time: String
+
+)
+
+class Weather(
+    @SerializedName("icon") val icon: String
 )
 
 class MainForecastInfo(
@@ -35,7 +43,8 @@ fun ForecastRemoteEntity.mapToDomain() : List<Forecast> {
   return mutableListOf<Forecast>().apply {
     forecastList.forEach {
       add(Forecast(
-          "time", //TODO: get proper time
+          it.time,
+          it.weather?.first()?.icon,
           it.mainInfo.temperature,
           it.mainInfo.humidity,
           it.wind.windSpeed,
@@ -43,6 +52,4 @@ fun ForecastRemoteEntity.mapToDomain() : List<Forecast> {
       ))
     }
   }
-
-
 }
