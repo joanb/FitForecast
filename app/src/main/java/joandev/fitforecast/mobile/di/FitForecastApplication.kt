@@ -12,7 +12,6 @@ import joandev.fitforecast.mobile.di.module.ApplicationModule
  */
 class FitForecastApplication : Application() {
 
-
   val component: ApplicationComponent
     get () = DaggerApplicationComponent.builder()
         .applicationModule(ApplicationModule(this))
@@ -23,11 +22,9 @@ class FitForecastApplication : Application() {
     component.inject(this)
   }
 
-
   companion object {
     operator fun get(context: Context): FitForecastApplication {
       return context.applicationContext as FitForecastApplication
     }
   }
-
 }

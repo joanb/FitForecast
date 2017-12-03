@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="joandev.fitforecast">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:name=".mobile.di.FitForecastApplication"
             android:allowBackup="true"
